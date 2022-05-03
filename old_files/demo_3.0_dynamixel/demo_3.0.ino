@@ -12,9 +12,6 @@ SoftwareSerial soft_serial(7, 8); // DYNAMIXELShield UART RX/TX
 
 #define L_pin 13
 #define R_pin 12
-//#define FSR0_pin A0
-//#define FSR1_pin A1
-//#define FSR2_pin A2
 
 const uint8_t DXL_DIR_PIN = 2; // DYNAMIXEL Shield DIR PIN
 Dynamixel2Arduino dxl(DXL_SERIAL, DXL_DIR_PIN);
@@ -24,7 +21,6 @@ const uint8_t DXL_ID = 1;
 
 uint32_t L_button = 0;
 uint32_t R_button = 0;
-
 
 //This namespace is required to use Control table item names
 using namespace ControlTableItem;
